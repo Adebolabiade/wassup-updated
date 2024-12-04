@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; font-size:larger;
+    margin: 0;
+    padding: 0;
+background-color:white;
+color: #212529;
+}
+
+#me{
+    background-color: rgb(255, 211, 0);
+}
+header {
+    background-color: rgb(255, 211, 0);
+    color: white;
+    margin: 0px ;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin:0 ;
+}
+
+nav {
+    background-color:#212529 ; /* Dark background */
+    color: #fff;           /* Text color */
+    padding: 10px 0;       /* Spacing above and below */
+}
+
+nav ul{
+    list-style: none;      /* Remove bullet points */
+  display: flex;         /* Use Flexbox for alignment */
+  justify-content: center; /* Center the links */
+  margin: 0;
+  padding: 0;
+}
+    
+
+
+.oldone{
+    margin: 0 20px;        /* Space between links */
+  }
+
+
+
+/*style the nav links*/
+nav ul li a:hover {
+    color: #fff; 
+}
+
+nav ul li a{
+    text-decoration: none; /* Remove underline */
+    color: #ccc;           /* Light gray link color */
+    font-size: 16px;       /* Adjust font size */
+  }
+
+#about{
+    font-size:25px
+}
+
+
+
+/* style price link*/
+#prices a{
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center; /* Center the links */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+section {
+    padding: 50px;
+    margin: 50px;
+    background-color: rgb(255, 211, 0);;
+    border-radius: 8px;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+}
+
+.pricesbody {
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    background-color:azure;
+  }
+
+  .flex-container div{
+    background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  }
+
+h2 {
+    color: black;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Company Profile Section */
+#company-profile 
+
+
+#aboutpage {
+    text-align:center;
+    
+}
+#peterimage{
+    background-size: cover;
+}
+/*Font size for company profile*/
+#company-profile p {
+    font-size: 25px;
+}
+
+/* Trainee Profiles Section */
+#trainee-profiles .trainee-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px; /* Add spacing between the sections */
+    flex-wrap: wrap;
+}
+
+.trainee-card {
+    flex: 1; /* Equal width for all boxes */
+    width: 350px;
+    padding: 15px;
+    text-align: center; /*center the text inside*/
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trainee-card h3 {
+    font-size: 1.5em;
+    color: black;
+}
+
+.trainee-card p {
+    font-size: 1em;
+    color: black;
+}
+
+.trainee-card button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#price-list .price-grid{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-tags{
+    width: 380px;
+    padding: 15px;
+    text-align:center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Job Specifications Section */
+#job-specs ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Application Form Section */
+#application-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#application-form form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#application-form form input,
+#application-form form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#application-form form button {
+    padding: 10px 20px;
+    background-color:#212529;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#application-form form button:hover {
+    background-color:black;
+}
+
+#price-list button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;} 
+
+
+/* Courses Section */
+#courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses ul li {
+    margin: 10px 0;
+}
+
+#courses ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#courses ul li a:hover {
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .trainee-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainee-card {
+        width: 90%;
+    }
+
+    #application-form form {
+        width: 90%;
+    }
+}

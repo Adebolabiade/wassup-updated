@@ -1,10 +1,17 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif; font-size:larger;
+    -family: 'Roboto', sans-serif; font-size:larger;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 background-color:white;
 color: #212529;
+}
+
+h1 {
+    font-size: 2.5rem; /* Bigger, bold title */
+    color: #000;
+    margin-bottom: 20px;
 }
 
 #me{
@@ -13,26 +20,31 @@ color: #212529;
 header {
     background-color: rgb(255, 211, 0);
     color: white;
-    margin: 0px ;
+    margin:  0 ;
     text-align: center;
-}
+   }
 
 header .logo h1 {
-    margin:0 ;
+    margin:0px 0px 8px ;
+    padding:40px;
 }
 
 nav {
-    background-color:#212529 ; /* Dark background */
-    color: #fff;           /* Text color */
-    padding: 10px 0;       /* Spacing above and below */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #212529;
+    color: #fff;
+    padding: 8px;
+    margin:0px 0px 15px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
 }
 
 nav ul{
     list-style: none;      /* Remove bullet points */
   display: flex;         /* Use Flexbox for alignment */
   justify-content: center; /* Center the links */
-  margin: 0;
-  padding: 0;
 }
     
 
@@ -49,9 +61,9 @@ nav ul li a:hover {
 }
 
 nav ul li a{
-    text-decoration: none; /* Remove underline */
-    color: #ccc;           /* Light gray link color */
-    font-size: 16px;       /* Adjust font size */
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
   }
 
 #about{
@@ -72,12 +84,18 @@ nav ul li a{
 
 
 section {
-    padding: 50px;
-    margin: 50px;
-    background-color: rgb(255, 211, 0);;
-    border-radius: 8px;
-    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover{
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
 }
 
 .pricesbody {
@@ -97,34 +115,68 @@ section {
   }
 
 h2 {
-    color: black;
+    font-size: 2rem;
+    color: #555; /* A softer shade for subheadings */
+    margin-bottom: 15px;
 }
 
 footer {
     background-color: #212529;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 10px;
 }
 
 footer a{
-    color: #007bff;
+    color: #ffcc00; /* Yellow links in the footer */
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 5px;
 }
 
 /* Company Profile Section */
-#company-profile 
+#company-profile h1{
+    text-align: center;
+    font-size: 50px;
+}
 
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-us-container img{
+    size:500px ;
+  }
+
+  .about{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Center the design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  }
 
 #aboutpage {
     text-align:center;
     
 }
 #peterimage{
-    background-size: cover;
+    background: size 1.5em;
 }
 /*Font size for company profile*/
 #company-profile p {
-    font-size: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 /* Trainee Profiles Section */
@@ -166,6 +218,16 @@ footer a{
     cursor: pointer;
 }
 
+.trainee-card button:hover{
+    background-color: #ffcc00; /* Bright yellow on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+#price-list button:hover{
+    background-color: #ffcc00; /* Bright yellow on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
 #price-list .price-grid{
     display: flex;
     justify-content: space-around;
@@ -199,6 +261,7 @@ footer a{
 #application-form form label {
     margin-top: 10px;
     font-weight: bold;
+    color:black ;
 }
 
 #application-form form input,
@@ -212,17 +275,17 @@ footer a{
 }
 
 #application-form form button {
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
     padding: 10px 20px;
-    background-color:#212529;
-    color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 #application-form form button:hover {
-    background-color:black;
+    background-color: #ffcc00; /* Bright yellow on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
 }
 
 #price-list button{
@@ -239,6 +302,7 @@ footer a{
 #courses ul {
     list-style: none;
     padding: 0;
+    color: black;
 }
 
 #courses ul li {
@@ -249,15 +313,22 @@ footer a{
     color: #007bff;
     text-decoration: none;
     font-size: 1.1em;
+    
+}
+
+#courses p{
+    color: black;
 }
 
 #courses ul li a:hover {
-    text-decoration: none;
+    color: #ff8000; /* Orange on hover */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     nav ul {
+        text-align: center;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -272,10 +343,12 @@ footer a{
     }
 
     .trainee-card {
-        width: 90%;
+        margin: 10px auto; /* Center cards on mobile */
+        width: 90%; /* Adjust card width */;
     }
 
     #application-form form {
-        width: 90%;
+        width: 100%; /* Full-width buttons for mobile */
+        padding: 15px;
     }
 }

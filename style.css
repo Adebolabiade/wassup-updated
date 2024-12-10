@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    -family: 'Roboto', sans-serif; font-size:larger;
+    font-family: calibri;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -45,26 +45,33 @@ nav ul{
     list-style: none;      /* Remove bullet points */
   display: flex;         /* Use Flexbox for alignment */
   justify-content: center; /* Center the links */
+ 
 }
     
 
 
 .oldone{
-    margin: 0 20px;        /* Space between links */
+    margin: 0px 0px; /* Space between links */
+    justify-content:flex;
+    flex: 0.2 ; 
+    text-decoration: none;
+    color:#fff ; /*color of the links*/
   }
 
 
 
 /*style the nav links*/
 nav ul li a:hover {
-    color: #fff; 
+    color:rgb(255, 211, 0); 
 }
 
-nav ul li a{
+.oldone a{
     color: #fff;
+    margin: 0px 0px; /* Space between links */
     text-decoration: none;
-    margin-right: 15px;
-  }
+    }
+    
+ 
 
 #about{
     font-size:25px

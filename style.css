@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    -family: 'Roboto', sans-serif; font-size:larger;
+    font-family: calibri;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -24,7 +24,7 @@ header {
     text-align: center;
    }
 
-header .logo h1 {
+header  h1 {
     margin:0px 0px 8px ;
     padding:40px;
 }
@@ -45,30 +45,40 @@ nav ul{
     list-style: none;      /* Remove bullet points */
   display: flex;         /* Use Flexbox for alignment */
   justify-content: center; /* Center the links */
+ 
 }
     
 
 
 .oldone{
-    margin: 0 20px;        /* Space between links */
+    margin: 0px 0px; /* Space between links */
+    justify-content:flex;
+    flex: 0.2 ; 
+    text-decoration: none;
+    color:#fff ; /*color of the links*/
   }
 
 
 
 /*style the nav links*/
 nav ul li a:hover {
-    color: #fff; 
+    color:rgb(255, 211, 0); 
 }
-
-nav ul li a{
+nav ul li a:active {
+    color:rgb(0, 255, 242);
+    background-color: #007bff;
+    border-radius: 10px; 
+}
+.oldone a{
     color: #fff;
+    margin: 0px 0px; /* Space between links */
     text-decoration: none;
-    margin-right: 15px;
-  }
+    font-size:1.5rem;
+    }
+    
+ 
 
-#about{
-    font-size:25px
-}
+
 
 
 
@@ -138,7 +148,7 @@ footer a{
 }
 
 /* Company Profile Section */
-#company-profile h1{
+#company-profile {
     text-align: center;
     font-size: 50px;
 }
@@ -148,10 +158,13 @@ footer a{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin: 30px;
   }
   .about-us-container img{
     size:500px ;
   }
+
+  
 
   .about{
     display: flex;
@@ -168,16 +181,12 @@ footer a{
 
 #aboutpage {
     text-align:center;
-    
-}
+    }
+
 #peterimage{
     background: size 1.5em;
 }
-/*Font size for company profile*/
-#company-profile p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
+
 
 /* Trainee Profiles Section */
 #trainee-profiles .trainee-grid {

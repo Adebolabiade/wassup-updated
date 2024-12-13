@@ -78,7 +78,7 @@ nav ul li a:hover {
     nav ul li a:active {
         background-color: lightblue; /* Highlight active link */
         color: #333; /* Contrast text color */
-        font-weight: bold; /* Make the text stand out */
+        font-weight: ; /* Make the text stand out */
         border-radius: 5px; /* Rounded corners for the active link */
     }
 

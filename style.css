@@ -381,6 +381,7 @@ footer a{
 
     #application-form form {
         width: 100%; /* Full-width buttons for mobile */
+        height: fit-content;
         padding: 15px;
     }
 }

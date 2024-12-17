@@ -57,6 +57,7 @@ nav ul{
     flex: 0.2 ; 
     text-decoration: none;
     color:#fff ; /*color of the links*/
+    font-size: 20px;
   }
 
 

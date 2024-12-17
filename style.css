@@ -115,7 +115,7 @@ section:hover{
 
 .pricesbody p {
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 
@@ -159,7 +159,7 @@ footer a{
 /* Company Profile Section */
 #company-profile {
     text-align: center;/*align textin the center*/
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .about-us-container {

@@ -199,7 +199,7 @@ footer a{
 }
 
 #trainee-profiles p,h2,h3 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* Trainee Profiles Section */
@@ -376,8 +376,9 @@ footer a{
     }
 
     .trainee-card {
-        margin:; /* Center cards on mobile */
+        margin:0; /* Center cards on mobile */
         width: 100%; /* Adjust card width */;
+        font-size: larger;
     }
 
     #application-form form {

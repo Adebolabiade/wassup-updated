@@ -377,7 +377,7 @@ footer a{
 
     .trainee-card {
         margin: 10px auto; /* Center cards on mobile */
-        width: 90%; /* Adjust card width */;
+        width: 100%; /* Adjust card width */;
     }
 
     #application-form form {

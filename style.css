@@ -143,7 +143,6 @@ footer {
     text-align: center;
     padding: 20px 10px;
     font-size: 20px;
-    flex-grow: 1;
 }
 
 
@@ -200,7 +199,7 @@ footer a{
 }
 
 #trainee-profiles p,h2,h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* Trainee Profiles Section */

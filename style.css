@@ -376,13 +376,13 @@ footer a{
     }
 
     .trainee-card {
-        margin: 10px auto; /* Center cards on mobile */
+        margin:; /* Center cards on mobile */
         width: 100%; /* Adjust card width */;
     }
 
     #application-form form {
         width: 100%; /* Full-width buttons for mobile */
-        
+        height: fit-content;
        
     }
 }

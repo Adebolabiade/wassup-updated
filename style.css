@@ -214,7 +214,7 @@ footer a{
 .trainee-card {
     flex: 1; /* Equal width for all boxes */
     width: 350px;
-    padding: 45px;
+    padding: 15px;
     text-align: center; /*center the text inside*/
     background-color: #f8f9fa;
     border-radius: 8px;
